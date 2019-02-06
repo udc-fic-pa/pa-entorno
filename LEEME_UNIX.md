@@ -219,9 +219,9 @@
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 
 ```shell
-    cd $HOME/software/pa-shop-1.0.0/backend
+    cd $HOME/software/pa-shop-1.0.0-src/backend
     mvn sql:execute install
-    cd $HOME/software/pa-shop-1.0.0/frontend
+    cd $HOME/software/pa-shop-1.0.0-src/frontend
     npm install
 ```
     
