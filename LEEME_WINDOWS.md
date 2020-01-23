@@ -1,8 +1,7 @@
-# Instalación / Configuración entorno PA / 2018-2019 - Windows
+# Instalación / Configuración entorno PA / 2019-2020 - Windows
 -------------------------------------------------------------------------------
 
-## Descargar y copiar el SW 
-> Disponible desde ftp://ftp.fic.udc.es/POJOyWS/
+## Descargar e instalar el siguiente SW disponible en ftp://ftp.fic.udc.es/POJOyWS/
 
 - Seleccionar la versión adecuada al operativo (Windows) / arquitectura del 
   ordenador (32 o 64 bits).
@@ -13,13 +12,6 @@
 - Descargar y descomprimir en `C:\Java` el siguiente software
     - maven
     - eclipse
-    - visual studio code
-
-- Descargar e instalar en la ruta por defecto el JDK
-    - Doble-click en `jdk-8u181-windows-<xxx>.exe`. Usar las opciones por defecto.
-
-- Descargar e instalar en la ruta por defecto Node
-    - Doble-click en `node-v10.15.0-x64.msi`. Usar las opciones por defecto.
 	 
 - Descargar e instalar en la ruta por defecto MySQL:
     - Doble-click en `mysql-installer-community-8.0.12.0.msi`
@@ -33,12 +25,29 @@
 > NOTA: Comprobar que la opción "Start the MySQL Server at System Startup"
   está marcada, para que se instale como servicio Windows.
     
+- Descargar e instalar en la ruta por defecto el JDK
+    - Doble-click en `jdk-8u181-windows-<xxx>.exe`. Usar las opciones por defecto.
+
 ## Descargar y descomprimir los ejemplos de la asignatura 
 
 > Disponibles en moodle
 
 - Descargar en `C:\software`
-  
+
+## Descargar e instalar el siguiente SW 
+
+- Visual Studio Code 1.41.1 (o superior)
+    - Descargar el instalador de https://code.visualstudio.com/download 
+    - Doble-click en el instalador e instalar con las opciones por defecto
+
+- Node.js 12.14.1 (o cualquier versión LTS posterior)
+    - Descargar el instalador de https://nodejs.org/es/download/
+    - Doble-click en el instalador e instalar con las opciones por defecto
+
+- Descargar e instalar Yarn 1.21.1 (o cualquier versión estable posterior)
+    - Descargar el instalador de https://yarnpkg.com/en/docs/install
+    - Doble-click en el instalador e instalar con las opciones por defecto
+      
 ## Establecer variables de entorno
 
 - Ir a "Panel de Control > Sistema > Configuración avanzada del sistema > Variables de entorno ..."
@@ -49,7 +58,7 @@
     - Nombre: `JAVA_HOME`
         + Valor: `C:\Program Files\Java\jdk1.8.0_181`
     - Nombre: `MAVEN_HOME`
-        + Valor: `C:\Program Files\Java\apache-maven-3.5.4`
+        + Valor: `C:\Program Files\Java\apache-maven-3.6.1`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
@@ -73,14 +82,14 @@
     java -version
     mvn -version
     node -v
-    npm -v
+    yarn -v
     mysqld --version
     eclipse             # (pulsar en "Cancel" en la ventana que se abre)
 ```
 
 - Comprobar que se puede ejecutar visual studio code
 
-## Creación de bases de datos necesarias para los ejemplos y el proyecto plantilla
+## Creación de bases de datos necesarias para los ejemplos
 - Arrancar MySQL
   - Si se ha instalado como servicio seguramente se haya iniciado de forma 
     automática. En otro caso habría que iniciar el servicio manualmente.
@@ -92,8 +101,7 @@
   (`mysqladmin` o `myqsl`), probar a ejecutarlos añadiendo la opción `-p` para que
   solicite la password del usuario root.
 
-- Creación de bases de datos pa, patest, paproject y paprojecttest (abrir en una 
-  consola diferente)
+- Creación de bases de datos ws y wstest (abrir en una consola diferente)
 
 ```shell
 	mysqladmin -u root create pa
@@ -102,7 +110,7 @@
 	mysqladmin -u root create paprojecttest    
 ```
 
-- Creación de usuario pa con password pa con permisos sobre todas las bases de datos
+- Creación de usuario ws con password con permisos sobre ws y wstest
 
 ```shell
     mysql -u root
@@ -135,15 +143,14 @@
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 
 ```shell
-    cd $HOME/software/pa-shop-1.0.0-src/backend
-    mvn sql:execute compile
-    cd $HOME/software/pa-shop-1.0.0-src/frontend
-    npm install
+    cd $HOME/software/pa-shop-1.0.0/backend
+    mvn sql:execute install
+    cd $HOME/software/pa-shop-1.0.0/frontend
+    yarn install
 ```
 	
 ## Configuración de eclipse
-> NOTA: El wizard "Preferences" está accesible desde el menú "Window" (menú
-  "Eclipse" en Mac OS X)
+> NOTA: El wizard "Preferences" está accesible desde el menú "Window"
 
 - Utilizar Java 1.8:
     + En "Preferences>Java>Compiler" seleccionar "1.8" en "Compiler
@@ -151,10 +158,11 @@
     + En "Preferences>Java>Installed JREs" seleccionar la JVM 1.8.0(Java SE 8).
 
 - Establecer UTF-8 como el encoding por defecto de Eclipse
-     + En "Preferences>General>Workspace" seleccionar UTF-8 en "Text File Encoding"
+    + En "Preferences>General>Workspace" seleccionar UTF-8 en "Text File Encoding"
   
 - Establecer UTF-8 como el encoding por defecto para ficheros properties Java
     + En "Preferences>General>Content Types>Text>Java Properties File", escribir "UTF-8" y pulsar "Update"
+
     
 ## Instalación y configuración básica de Git
 ---------------------------------------------------------------------
@@ -201,7 +209,6 @@
     
 ## Instalación de una herramienta cliente gráfica para Git
 
-- En el ftp está disponible "SourceTree" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
+- En el ftp están disponibles "GitKraken" y "SourceTree" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
     - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients)
     - Doble-click en el instalador e instalar con las opciones por defecto
-    

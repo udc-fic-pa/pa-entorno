@@ -1,8 +1,7 @@
-# Instalación / Configuración entorno PA / 2018-2019 - Linux y macOS
+# Instalación / Configuración entorno PA / 2019-2020 - Linux y macOS
 -------------------------------------------------------------------------------
 
-## Descargar y copiar el SW
-> Disponible desde ftp://ftp.fic.udc.es/POJOyWS/
+## Descargar e instalar el siguiente SW disponible en ftp://ftp.fic.udc.es/POJOyWS/
 
 - Seleccionar la versión adecuada al operativo (Linux macOS) / 
   arquitectura del ordenador (32 o 64 bits).
@@ -11,7 +10,6 @@
     - jdk
     - maven
     - eclipse
-    - visual studio code
      
 ## Descargar y descomprimir los ejemplos de la asignatura
 - Descargar en `$HOME/software`
@@ -56,17 +54,23 @@
     which eclipse
 ```
 
-- Comprobar que se puede ejecutar visual studio code
+## Instalación de Visual Studio Code 1.41.1 (o superior)
+- Descargar la distribución binaria (.tar.gz) de https://code.visualstudio.com/download
+- Descomprimirla en `/opt`
 
-## Instalación de Node en Linux (método recomendado)
-- Descomprimir la distribución binaria, node-v10.15.0-linux-x64.tar.xz, 
-  y descomprimirla en /opt
+- Comprobar que se puede ejecutar Visual Studio Code
+
+## Instalación de Node.js 12.14.1 (o cualquier versión LTS posterior)
+
+### Linux (método recomendado)
+- Descargar la distribución binaria .tar.gz (Linux Binaries (x64)) de https://nodejs.org/es/download/
+- Descomprimirla en `/opt`
 
 - Añadir al fichero `$HOME/.bashrc` lo siguiente
 
 ```shell
-    # NODE
-    NODE_HOME=/opt/node-v10.15.0-linux-x64
+    # Node.js 
+    NODE_HOME=/opt/node-v12.14.1-linux-x64
     PATH=$NODE_HOME/bin:$PATH
 ```
 
@@ -75,12 +79,11 @@
 
 ```shell
     which node
-    which npm
 ```
 
-## Instalación de Node en Linux (método alternativo)
+### Linux (método alternativo)
 - Se recomienda instalarlo como paquete siguiendo las instrucciones que se 
-  indican en https://nodejs.org/es/download/package-manager/ . Por ejemplo, 
+  indican en https://nodejs.org/es/download/package-manager/. Por ejemplo, 
   en ubuntu:
 
 ```shell
@@ -88,14 +91,49 @@
     sudo apt-get install npm
 ```
 
-## Instalación de Node en MacOS
-- Doble click en node-v10.15.0.pkg y elegir las opciones por defecto.
+### macOS
+- Descargar el instalador de la versión 12.14.1 (o cualquier versión LTS posterior) de https://nodejs.org/es/download/
+- Doble-click en el instalador e instalar con las opciones por defecto
 
-## Instalación de MySQL 8.0.12 en Linux (método recomendado)
+## Instalación de Yarn 1.21.1 (o cualquier versión estable posterior)
+
+### Linux (método recomendado)
+- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Seleccionar "Alternatives" en el selector "Operating system"
+- Seguir las instrucciones del apartado "Manual Install via tarball" para descargar un .tar.gz y descomprimirla en `/opt`
+
+- Añadir al fichero `$HOME/.bashrc` lo siguiente
+
+```shell
+    # Yarn
+    NODE_HOME=/opt/yarn-v1.21.1
+    PATH=$NODE_HOME/bin:$PATH
+```
+
+- Cerrar todos los terminales y abrir terminales nuevos. Comprobar que 
+  ha quedado correctamente instalado
+
+```shell
+    which yarn
+```
+
+### Linux (método alternativo)
+- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Seleccionar la versión de Linux en el selector "Operating system" y seguir las instrucciones del apartado
+
+### macOS
+- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Seleccionar "macOS" en el selector "Operating system" y seguir las instrucciones del apartado
+  adecuado en función del método de instalación elegido
+
+
+## Instalación de MySQL 8.0.12 
+
+### Linux (método recomendado)
 - Se recomienda instalarlo como paquete siguiendo las instrucciones que se 
   indican en https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html
 
-## Instalación de MySQL 8.0.12 en Linux (método alternativo)
+### Linux (método alternativo)
 - En caso de no poder instalarlo como paquete se pueden seguir las 
   instrucciones de este apartado para realizar una instalación de MySQL
   como usuario root y ejecución como usuario normal
@@ -154,7 +192,7 @@
     mysqld --initialize-insecure
 ```    
 
-## Instalación de MySQL en macOS
+### macOS
 
 - Doble click en mysql-8.0.12-macos10.13-x86_64.dmg y elegir las opciones 
   por defecto.
@@ -164,7 +202,7 @@
 
 - Más información: https://dev.mysql.com/doc/refman/8.0/en/osx-installation.html
 
-## Creación de bases de datos necesarias para los ejemplos y el proyecto plantilla
+## Creación de bases de datos necesarias para los ejemplos
 
 - Arrancar MySQL (sólo si el arranque no es automático)
 
@@ -176,17 +214,16 @@
   (`mysqladmin` o `myqsl`), probar a ejecutarlos añadiendo la opción `-p` para que
   solicite la password del usuario root.
 
-- Creación de bases de datos pa, patest, paproject y paprojecttest (abrir en una 
-  consola diferente)
+- Creación de bases de datos ws y wstest (abrir en una consola diferente)
 
 ```shell
-	mysqladmin -u root create pa
-	mysqladmin -u root create patest
-	mysqladmin -u root create paproject
-	mysqladmin -u root create paprojecttest    
+  mysqladmin -u root create pa
+  mysqladmin -u root create patest
+  mysqladmin -u root create paproject
+  mysqladmin -u root create paprojecttest
 ```
 
-- Creación de usuario pa con password pa con permisos sobre todas las bases de datos
+- Creación de usuario ws con password con permisos sobre ws y wstest
 
 ```shell
     mysql -u root
@@ -219,9 +256,9 @@
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 
 ```shell
-    cd $HOME/software/pa-shop-1.0.0-src/backend
+    cd $HOME/software/pa-shop-1.0.0/backend
     mvn sql:execute install
-    cd $HOME/software/pa-shop-1.0.0-src/frontend
+    cd $HOME/software/pa-shop-1.0.0/frontend
     npm install
 ```
     
@@ -248,8 +285,10 @@
 - Establecer UTF-8 como el encoding por defecto para ficheros properties Java
     + En "Preferences>General>Content Types>Text>Java Properties File", escribir "UTF-8" y pulsar "Update"
 
-## Instalación y configuración básica de Git
+## Git
 ---------------------------------------------------------------------
+
+### Instalación y configuración básica
 
 - Instalación en Linux (Ubuntu)
 
@@ -277,7 +316,7 @@
 - Instalación de utilidad de autocompletado para Git
     - Seguir las instrucciones indicadas en https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
 
-## Creación y configuración de claves SSH
+### Creación y configuración de claves SSH
 
 - Desde un terminal ejecutar:
 > Generar las claves en la ruta por defecto ($HOME/.ssh) y con los nombres 
@@ -302,16 +341,15 @@
     ssh -T git@git.fic.udc.es
 ```
 
+### Instalación de una herramienta cliente gráfica para Git
 
-## Instalación de una herramienta cliente gráfica para Git
-
-- Linux: En el ftp está disponible "SmartGit" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
-    - Descargar `smartgit-linux-18_1_4.tar.gz` de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients) y descomprimirlo en `/opt`
-    - Para ejecutar la herramienta utilizar el script `/opt/smartgit/bin/smartgit.sh`
+- Linux: En el ftp están disponibles "GitKraken" y "SmartGit" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
+    - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients) y descomprimirlo en `/opt`
+    - En el caso de "SmartGit", para ejecutar la herramienta utilizar el script `/opt/smartgit/bin/smartgit.sh`
 
     
-- macOS: En el ftp está disponible "SourceTree" pero puede utilizarse cualquier otra ([ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients))
-- Instalación en macOS:
-    - Descargar `SourceTree_2.7.6a.zip` de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients).
-    - Copiar el fichero `SourceTree.app` a la carpeta `Aplicaciones`.
+- macOS: En el ftp están disponibles "GitKraken" y "SourceTree" pero puede utilizarse cualquier otro ([ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients))
+    - SourceTree: descargar el archivo .zip de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients), descomprimirlo y hacer doble clic en el archivo .dmg.
+    - GitKraken: descargar el archivo .dmg y hacer doble clic en él.
+
     
