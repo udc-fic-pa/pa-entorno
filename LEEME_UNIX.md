@@ -18,7 +18,7 @@
 
 ```shell
     cd $HOME/software
-    tar zxf pa-shop-1.0.0-src.tar.gz
+    tar zxf pa-shop-<version>-src.tar.gz
 ```
 
 ## Establecer variables de entorno
@@ -35,7 +35,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=/opt/apache-maven-3.5.4
+    MAVEN_HOME=/opt/apache-maven-3.6.1
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
@@ -63,7 +63,7 @@
 ## Instalación de Node.js 12.14.1 (o cualquier versión LTS posterior)
 
 ### Linux (método recomendado)
-- Descargar la distribución binaria .tar.gz (Linux Binaries (x64)) de https://nodejs.org/es/download/
+- Descargar la distribución binaria .tar.xz (Linux Binaries (x64)) de https://nodejs.org/es/download/
 - Descomprimirla en `/opt`
 
 - Añadir al fichero `$HOME/.bashrc` lo siguiente
@@ -256,9 +256,9 @@
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 
 ```shell
-    cd $HOME/software/pa-shop-1.0.0/backend
+    cd $HOME/software/pa-shop-<version>/backend
     mvn sql:execute install
-    cd $HOME/software/pa-shop-1.0.0/frontend
+    cd $HOME/software/pa-shop-<version>/frontend
     npm install
 ```
     
