@@ -55,9 +55,29 @@
 ```
 
 ## Instalación de Visual Studio Code 1.41.1 (o superior)
+
+### Linux (método recomendado)
+- Descargar el paquete apropiado (.deb o .rpm) de https://code.visualstudio.com/download
+- Instalar el paquete 
+
+```shell
+    sudo dpkg -i <nombre_paquete>.deb 
+```
+o    
+```shell
+    sudo rpm -i <nombre_paquete>.rpm
+```
+
+- Comprobar que se puede ejecutar Visual Studio Code
+
+### Linux (método alternativo)
 - Descargar la distribución binaria (.tar.gz) de https://code.visualstudio.com/download
 - Descomprimirla en `/opt`
+- Comprobar que se puede ejecutar Visual Studio Code
 
+### macOS
+- Descargar el instalador de https://code.visualstudio.com/download 
+- Doble-click en el instalador e instalar con las opciones por defecto
 - Comprobar que se puede ejecutar Visual Studio Code
 
 ## Instalación de Node.js 12.14.1 (o cualquier versión LTS posterior)
@@ -100,7 +120,7 @@
 ### Linux (método recomendado)
 - Acceder a https://yarnpkg.com/lang/en/docs/install/
 - Seleccionar "Alternatives" en el selector "Operating system"
-- Seguir las instrucciones del apartado "Manual Install via tarball" para descargar un .tar.gz y descomprimirla en `/opt`
+- Seguir las instrucciones del apartado "Manual Install via tarball" para descargar un .tar.gz y descomprimirlo en `/opt`
 
 - Añadir al fichero `$HOME/.bashrc` lo siguiente
 
