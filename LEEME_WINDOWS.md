@@ -32,7 +32,7 @@
 
 > Disponibles en moodle
 
-- Descargar en `C:\software`
+- Descargar y descomprimir, por ejemplo, en `C:\software`
 
 ## Descargar e instalar el siguiente SW 
 
@@ -44,7 +44,7 @@
     - Descargar el instalador de https://nodejs.org/es/download/
     - Doble-click en el instalador e instalar con las opciones por defecto
 
-- Descargar e instalar Yarn 1 (Stable version)
+- Yarn 1 (Stable version)
     - Descargar el instalador de https://classic.yarnpkg.com/en/docs/install
     - Doble-click en el instalador e instalar con las opciones por defecto
       
@@ -97,23 +97,22 @@
 > NOTA: En Panel de Control, Servicios Locales se puede configurar arranque 
   automático o manual. También se puede arrancar y detener.
            
-> NOTA: Si se produce un error de conexión al ejecutar los siguientes comandos
-  (`mysqladmin` o `myqsl`), probar a ejecutarlos añadiendo la opción `-p` para que
-  solicite la password del usuario root.
+> NOTA: Cuando se ejecutan los comandos `mysqladmin` y `myqsl`, con la opción
+  `-p` se nos solicitará la password del usuario root.
 
 - Creación de bases de datos ws y wstest (abrir en una consola diferente)
 
 ```shell
-	mysqladmin -u root create pa
-	mysqladmin -u root create patest
-	mysqladmin -u root create paproject
-	mysqladmin -u root create paprojecttest    
+	mysqladmin -u root create pa -p
+	mysqladmin -u root create patest -p
+	mysqladmin -u root create paproject -p
+	mysqladmin -u root create paprojecttest -p    
 ```
 
 - Creación de usuario ws con password con permisos sobre ws y wstest
 
 ```shell
-    mysql -u root
+    mysql -u root -p
         CREATE USER 'pa'@'localhost' IDENTIFIED BY 'pa';
         GRANT ALL PRIVILEGES ON pa.* to 'pa'@'localhost' WITH GRANT OPTION;
         GRANT ALL PRIVILEGES ON patest.* to 'pa'@'localhost' WITH GRANT OPTION;
@@ -143,9 +142,9 @@
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 
 ```shell
-    cd $HOME/software/pa-shop-<version>/backend
+    cd \software\pa-shop-<version>/backend
     mvn sql:execute install
-    cd $HOME/software/pa-shop-<version>/frontend
+    cd \software\pa-shop-<version>/frontend
     yarn install
 ```
 	
@@ -164,8 +163,9 @@
     + En "Preferences>General>Content Types>Text>Java Properties File", escribir "UTF-8" y pulsar "Update"
 
     
-## Instalación y configuración básica de Git
----------------------------------------------------------------------
+## Git
+
+### Instalación y configuración básica
 
 - Instalación
     - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git](ftp://ftp.fic.udc.es/POJOyWS/git)
@@ -185,7 +185,7 @@
     git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe' -w"
 ```
 
-## Creación y configuración de claves SSH
+### Creación y configuración de claves SSH
 
 - Desde el intérprete de comandos git-bash ejecutar:
 > Generar las claves en la ruta por defecto ($HOME/.ssh) y con los nombres  por defecto 
@@ -207,7 +207,7 @@
     ssh -T git@git.fic.udc.es
 ```
     
-## Instalación de una herramienta cliente gráfica para Git
+### Instalación de una herramienta cliente gráfica para Git
 
 - En el ftp están disponibles "GitKraken" y "SourceTree" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
     - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients)

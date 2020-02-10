@@ -12,14 +12,10 @@
     - eclipse
      
 ## Descargar y descomprimir los ejemplos de la asignatura
-- Descargar en `$HOME/software`
-
 > Disponibles en moodle
 
-```shell
-    cd $HOME/software
-    tar zxf pa-shop-<version>.zip
-```
+- Descargar y descomprimir, por ejemplo, en `$HOME/software`
+
 
 ## Establecer variables de entorno
 - Añadir al fichero `$HOME/.bashrc` lo siguiente (en el caso de macOS utilizar 
@@ -102,13 +98,7 @@ o
 
 ### Linux (método alternativo)
 - Se recomienda instalarlo como paquete siguiendo las instrucciones que se 
-  indican en https://nodejs.org/es/download/package-manager/. Por ejemplo, 
-  en ubuntu:
-
-```shell
-    sudo apt-get install nodejs
-    sudo apt-get install npm
-```
+  indican en https://nodejs.org/es/download/package-manager/.
 
 ### macOS
 - Descargar el instalador de https://nodejs.org/es/download/
@@ -304,7 +294,6 @@ o
     + En "Preferences>General>Content Types>Text>Java Properties File", escribir "UTF-8" y pulsar "Update"
 
 ## Git
----------------------------------------------------------------------
 
 ### Instalación y configuración básica
 
