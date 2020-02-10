@@ -36,16 +36,16 @@
 
 ## Descargar e instalar el siguiente SW 
 
-- Visual Studio Code 1.41.1 (o superior)
+- Visual Studio Code actualizado
     - Descargar el instalador de https://code.visualstudio.com/download 
     - Doble-click en el instalador e instalar con las opciones por defecto
 
-- Node.js 12.14.1 (o cualquier versión LTS posterior)
+- Node.js 12 (LTS version)
     - Descargar el instalador de https://nodejs.org/es/download/
     - Doble-click en el instalador e instalar con las opciones por defecto
 
-- Descargar e instalar Yarn 1.21.1 (o cualquier versión estable posterior)
-    - Descargar el instalador de https://yarnpkg.com/en/docs/install
+- Descargar e instalar Yarn 1 (Stable version)
+    - Descargar el instalador de https://classic.yarnpkg.com/en/docs/install
     - Doble-click en el instalador e instalar con las opciones por defecto
       
 ## Establecer variables de entorno

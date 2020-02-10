@@ -18,7 +18,7 @@
 
 ```shell
     cd $HOME/software
-    tar zxf pa-shop-<version>-src.tar.gz
+    tar zxf pa-shop-<version>.zip
 ```
 
 ## Establecer variables de entorno
@@ -54,7 +54,7 @@
     which eclipse
 ```
 
-## Instalación de Visual Studio Code 1.41.1 (o superior)
+## Instalación de Visual Studio Code actualizado
 
 ### Linux (método recomendado)
 - Descargar el paquete apropiado (.deb o .rpm) de https://code.visualstudio.com/download
@@ -77,10 +77,9 @@ o
 
 ### macOS
 - Descargar el instalador de https://code.visualstudio.com/download 
-- Doble-click en el instalador e instalar con las opciones por defecto
-- Comprobar que se puede ejecutar Visual Studio Code
+- Doble-clic en el fichero .zip y copiar el .app a la carpeta /Aplicaciones.
 
-## Instalación de Node.js 12.14.1 (o cualquier versión LTS posterior)
+## Instalación de Node.js 12 (LTS version)
 
 ### Linux (método recomendado)
 - Descargar la distribución binaria .tar.xz (Linux Binaries (x64)) de https://nodejs.org/es/download/
@@ -90,7 +89,7 @@ o
 
 ```shell
     # Node.js 
-    NODE_HOME=/opt/node-v12.14.1-linux-x64
+    NODE_HOME=/opt/node-<version>
     PATH=$NODE_HOME/bin:$PATH
 ```
 
@@ -112,13 +111,13 @@ o
 ```
 
 ### macOS
-- Descargar el instalador de la versión 12.14.1 (o cualquier versión LTS posterior) de https://nodejs.org/es/download/
+- Descargar el instalador de https://nodejs.org/es/download/
 - Doble-click en el instalador e instalar con las opciones por defecto
 
-## Instalación de Yarn 1.21.1 (o cualquier versión estable posterior)
+## Instalación de Yarn 1 (Stable version)
 
 ### Linux (método recomendado)
-- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Acceder a https://classic.yarnpkg.com/en/docs/install
 - Seleccionar "Alternatives" en el selector "Operating system"
 - Seguir las instrucciones del apartado "Manual Install via tarball" para descargar un .tar.gz y descomprimirlo en `/opt`
 
@@ -126,7 +125,7 @@ o
 
 ```shell
     # Yarn
-    NODE_HOME=/opt/yarn-v1.21.1
+    NODE_HOME=/opt/yarn-v<version>
     PATH=$NODE_HOME/bin:$PATH
 ```
 
@@ -138,14 +137,13 @@ o
 ```
 
 ### Linux (método alternativo)
-- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Acceder a https://classic.yarnpkg.com/en/docs/install
 - Seleccionar la versión de Linux en el selector "Operating system" y seguir las instrucciones del apartado
 
 ### macOS
-- Acceder a https://yarnpkg.com/lang/en/docs/install/
+- Acceder a https://classic.yarnpkg.com/en/docs/install
 - Seleccionar "macOS" en el selector "Operating system" y seguir las instrucciones del apartado
   adecuado en función del método de instalación elegido
-
 
 ## Instalación de MySQL 8.0.12 
 
