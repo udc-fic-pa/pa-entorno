@@ -58,7 +58,7 @@
     - Nombre: `JAVA_HOME`
         + Valor: `C:\Program Files\Java\jdk1.8.0_181`
     - Nombre: `MAVEN_HOME`
-        + Valor: `C:\Program Files\Java\apache-maven-3.6.1`
+        + Valor: `C:\Java\apache-maven-3.6.1`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
