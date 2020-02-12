@@ -267,7 +267,7 @@ o
     cd $HOME/software/pa-shop-<version>/backend
     mvn sql:execute install
     cd $HOME/software/pa-shop-<version>/frontend
-    npm install
+    yarn install
 ```
     
 ## Finalizar la ejecución de la BD
