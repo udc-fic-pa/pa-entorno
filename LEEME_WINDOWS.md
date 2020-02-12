@@ -68,7 +68,7 @@
   entorno `PATH`. Para ello hay que seleccionarla, pulsar en "Editar..." y 
   añadir al principio de su valor (sin borrar su valor antiguo):
   
-  `%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%MYSQL_HOME%\bin;C:\Program Files\Java\eclipse;`
+  `%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%MYSQL_HOME%\bin;C:\Java\eclipse;`
   
 > NOTA: Si la variable de entorno PATH no existiese, entonces habría que 
     crearla procediendo de igual forma que se hizo con las variables anteriores.
