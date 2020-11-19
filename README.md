@@ -1,5 +1,5 @@
-## Installing the development environment
+## Instalación del entorno de desarrollo
 
-- [Instructions for Unix-like operating systems (spanish)] (/LEEME_UNIX.md).
-- [Instructions for Windows (spanish)] (/LEEME_WINDOWS.md).
+- [Instrucciones para Linux y macOS] (/LEEME_UNIX.md).
+- [Instrucciones para Windows] (/LEEME_WINDOWS.md).
 
