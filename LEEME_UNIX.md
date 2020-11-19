@@ -232,8 +232,6 @@ instalado en el sistema operativo.
     ssh-keygen -t rsa -b 4096 -C "your_email@udc.es"
 ```
 
-FIXME: actualizar lo que aparece abajo.
-
 - Acceder a [https://git.fic.udc.es/profile/keys](https://git.fic.udc.es/profile/keys)
 - En el campo "Key" copiar la clave pública, es decir, el contenido del fichero 
   `$HOME/.ssh/id_rsa.pub`
