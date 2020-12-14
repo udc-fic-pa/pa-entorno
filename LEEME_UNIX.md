@@ -231,18 +231,21 @@ instalado en el sistema operativo.
     ssh-keygen -t rsa -b 4096 -C "your_email@udc.es"
 ```
 
-- Acceder a [https://git.fic.udc.es/profile/keys](https://git.fic.udc.es/profile/keys)
+## Añadir clave SSH a GitHub
+> NOTA: Este paso no es necesario si ya utilizó GitHub en otras asignaturas.
+
+- Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
+- Añadir una clave SSH.
+- En el campo "Title" ponerle un nombre.
 - En el campo "Key" copiar la clave pública, es decir, el contenido del fichero 
   `$HOME/.ssh/id_rsa.pub`
-- En el campo "Title" ponerle un nombre
-- Clic en "Add key"
+- Clic en "Add SSH key".
 
-- Comprobar conexión SSH con el servidor de git y añadirlo a la lista de hosts 
-  conocidos 
+- Comprobar conexión SSH con el servidor de git y añadirlo a la lista de hosts conocidos. 
   
 > Contestar "yes" a "Are you sure you want to continue connecting (yes/no)?"
     
 ```shell
-    ssh -T git@git.fic.udc.es
+    ssh -T git@github.com
 ```
 
