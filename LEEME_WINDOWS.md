@@ -1,53 +1,46 @@
-# Instalación / Configuración entorno PA / 2019-2020 - Windows
+# Instalación / Configuración entorno PA / 2020-2021 - Windows
 -------------------------------------------------------------------------------
 
-## Descargar e instalar el siguiente SW disponible en ftp://ftp.fic.udc.es/POJOyWS/
-
-- Seleccionar la versión adecuada al operativo (Windows) / arquitectura del 
-  ordenador (32 o 64 bits).
+## Descargar e instalar el software
 
 > NOTA: Se recomienda utilizar un usuario de Windows sin espacios en el nombre 
-  para evitar problemas con Eclipse y Maven.
+  para evitar problemas con Maven.
 
-- Descargar y descomprimir en `C:\Java` el siguiente software
-    - maven
-    - eclipse
+- Descargar y descomprimir en `C:\Program Files\Java` el siguiente software
+    - Maven 3.6.x o superior 
+        + https://maven.apache.org/download.cgi
+        + Descargar el "Binary zip archive"
 	 
-- Descargar e instalar en la ruta por defecto MySQL:
-    - Doble-click en `mysql-installer-community-8.0.12.0.msi`
-    - Aceptar la licencia   
+- Descargar e instalar AdoptOpenJDK 11
+    - https://adoptopenjdk.net/
+    - Seleccionar la version "Open JDK 11 (LTS)" y la JVM "Hotspot".
+    - Descargar el instalador .msi para Windows e instalar usando las opciones por defecto.
+
+- Descargar e instalar IntelliJ IDEA
+    - https://www.jetbrains.com/es-es/idea/download
+        + Se puede utilizar la versión Community (libre) o la versión Ultimate 
+          (solicitando una licencia para estudiantes). 
+    - Instalar usando las opciones por defecto.
+	 
+- Descargar e instalar MySQL 8:
+    - https://dev.mysql.com/downloads/mysql/
+        + Descargar el instalador .msi para Windows
+    - Instalar en la ruta por defecto.
+    - Comprobar que la opción "Start the MySQL Server at System Startup"
+      está marcada, para que se instale como servicio Windows.
     - Elegir "Server only" o "Custom" (para instalar Server + Workbench) y usar 
      las opciones por defecto.
     - Después de la instalación, se ejecutará el wizard de Configuración de 
      MySQL Server. Utilizar las opciones por defecto excepto las siguientes:
          + Debe introducirse una contraseña no vacía para el usuario `root` (e.g. `root`)
 
-> NOTA: Comprobar que la opción "Start the MySQL Server at System Startup"
-  está marcada, para que se instale como servicio Windows.
-    
-- Descargar e instalar en la ruta por defecto el JDK
-    - Doble-click en `jdk-8u181-windows-<xxx>.exe`. Usar las opciones por defecto.
-
-## Descargar y descomprimir los ejemplos de la asignatura 
-
-> Disponibles en moodle
-
-- Descargar y descomprimir, por ejemplo, en `C:\software`
-
-## Descargar e instalar el siguiente SW 
-
-- Visual Studio Code actualizado
-    - Descargar el instalador de https://code.visualstudio.com/download 
-    - Doble-click en el instalador e instalar con las opciones por defecto
-
-- Node.js 12 (LTS version)
+- Node.js 14 (LTS version)
     - Descargar el instalador de https://nodejs.org/es/download/
     - Doble-click en el instalador e instalar con las opciones por defecto
 
-- Yarn 1 (Stable version)
-    - Descargar el instalador de https://classic.yarnpkg.com/en/docs/install
-    - Doble-click en el instalador e instalar con las opciones por defecto
-      
+## Descargar y descomprimir pa-shop de Moodle
+- Descargar y descomprimir en `C:\software`
+
 ## Establecer variables de entorno
 
 - Ir a "Panel de Control > Sistema > Configuración avanzada del sistema > Variables de entorno ..."
@@ -56,19 +49,22 @@
   variables de entorno (para cada una pulsar en "Nueva ...", introducir el 
   nombre y el valor, y pulsar "Aceptar")
     - Nombre: `JAVA_HOME`
-        + Valor: `C:\Program Files\Java\jdk1.8.0_181`
+        + Valor: Directorio donde se instaló AdoptOpenJDK
+        + Por ejemplo:`C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot`
     - Nombre: `MAVEN_HOME`
-        + Valor: `C:\Java\apache-maven-3.6.1`
+        + Valor: Directorio donde se descomprimió Maven
+        + Por ejemplo: `C:\Program Files\Java\apache-maven-3.6.3`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
-        + Valor: `C:\Program Files\MySQL\MySQL Server 8.0`
+        + Valor: Directorio donde se instaló MySQL
+        + Por ejemplo: `C:\Program Files\MySQL\MySQL Server 8.0`
 
 - En la sección "Variables de usuario para `<user>`", modificar la variable de
   entorno `PATH`. Para ello hay que seleccionarla, pulsar en "Editar..." y 
   añadir al principio de su valor (sin borrar su valor antiguo):
   
-  `%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%MYSQL_HOME%\bin;C:\Java\eclipse;`
+  `%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%MYSQL_HOME%\bin;`
   
 > NOTA: Si la variable de entorno PATH no existiese, entonces habría que 
     crearla procediendo de igual forma que se hizo con las variables anteriores.
@@ -82,14 +78,13 @@
     java -version
     mvn -version
     node -v
-    yarn -v
     mysqld --version
-    eclipse             # (pulsar en "Cancel" en la ventana que se abre)
 ```
 
-- Comprobar que se puede ejecutar visual studio code
+- Comprobar que se puede ejecutar IntelliJ IDEA
 
 ## Creación de bases de datos necesarias para los ejemplos
+
 - Arrancar MySQL
   - Si se ha instalado como servicio seguramente se haya iniciado de forma 
     automática. En otro caso habría que iniciar el servicio manualmente.
@@ -121,7 +116,7 @@
         exit
 ```
 
-- Comprobar acceso a BD
+- Comprobar acceso a las bases de datos
 
 ```shell
     mysql -u pa --password=pa pa
@@ -145,70 +140,57 @@
     cd \software\pa-shop-<version>/backend
     mvn sql:execute install
     cd \software\pa-shop-<version>/frontend
-    yarn install
+    npm install
 ```
-	
-## Configuración de eclipse
-> NOTA: El wizard "Preferences" está accesible desde el menú "Window"
 
-- Utilizar Java 1.8:
-    + En "Preferences>Java>Compiler" seleccionar "1.8" en "Compiler
-    compliance level".
-    + En "Preferences>Java>Installed JREs" seleccionar la JVM 1.8.0(Java SE 8).
-
-- Establecer UTF-8 como el encoding por defecto de Eclipse
-    + En "Preferences>General>Workspace" seleccionar UTF-8 en "Text File Encoding"
   
-- Establecer UTF-8 como el encoding por defecto para ficheros properties Java
-    + En "Preferences>General>Content Types>Text>Java Properties File", escribir "UTF-8" y pulsar "Update"
+## Instalación y configuración básica de Git
+> NOTA: Este paso no es necesario si ya se utilizó y configuró Git en otras asignaturas
 
-    
-## Git
-
-### Instalación y configuración básica
-
-- Instalación
-    - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git](ftp://ftp.fic.udc.es/POJOyWS/git)
-    - Doble-click en el instalador e instalar con las opciones por defecto
+- Descargar e instalar Git
+    - https://git-scm.com/downloads
+    - Hacer clic en "Windows" para descargar.
+    - Instalar con las opciones por defecto.
 
 - Configuración básica
-    - Ejecutar git-bash (`$GIT_HOME/git-bash.exe`) y desde ese intérprete de  comandos ejecutar:
+
+> NOTA: `$GIT_HOME` debe sustituirse por la ruta donde se instaló git.
+
+    - Ejecutar git-bash (`$GIT_HOME/git-bash.exe`) y desde ese intérprete de comandos ejecutar:
     
 ```shell
     git config --global user.email "your_email@udc.es"
     git config --global user.name "Your Name"
 ```
 
-> The following line illustrates how to set Sublime as the Git default editor, but you can use any other editor installed in your OS
+> El siguiente comando ilustra como configurar Sublime como editor por defecto de Git, aunque se puede utilizar otro editor instalado en el sistema operativo.
     
 ```shell
     git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe' -w"
 ```
 
 ### Creación y configuración de claves SSH
+> NOTA: Este paso no es necesario si ya utilizó Git en otras asignaturas
 
 - Desde el intérprete de comandos git-bash ejecutar:
-> Generar las claves en la ruta por defecto ($HOME/.ssh) y con los nombres  por defecto 
+
+> Genera las claves en la ruta por defecto (%USERPROFILE%/.ssh) y con los nombres  por defecto 
       
 ```shell
     ssh-keygen -t rsa -b 4096 -C "your_email@udc.es"
 ```    
     
-- Acceder a [https://git.fic.udc.es/profile/keys](https://git.fic.udc.es/profile/keys)
-- En el campo "Key" copiar la clave pública, es decir, el contenido del fichero `$HOME/.ssh/id_rsa.pub`
-- En el campo "Title" ponerle un nombre
-- Clic en "Add key"
+- Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
+- Añadir una clave SSH.
+- En el campo "Title" ponerle un nombre.
+- En el campo "Key" copiar la clave pública, es decir, el contenido del fichero 
+  `%USERPROFILE%/.ssh/id_rsa.pub`
+- Clic en "Add SSH key".
 
 - Comprobar conexión SSH con el servidor de git y añadirlo a la lista de hosts conocidos. Desde git-bash:
   
 > Contestar "yes" a "Are you sure you want to continue connecting (yes/no)?"
    
 ```shell
-    ssh -T git@git.fic.udc.es
+    ssh -T git@github.com
 ```
-    
-### Instalación de una herramienta cliente gráfica para Git
-
-- En el ftp están disponibles "GitKraken" y "SourceTree" pero puede utilizarse cualquier otra (https://git-scm.com/downloads/guis)
-    - Descargar el instalador de [ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients](ftp://ftp.fic.udc.es/POJOyWS/git-gui-clients)
-    - Doble-click en el instalador e instalar con las opciones por defecto
