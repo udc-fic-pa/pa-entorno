@@ -18,8 +18,10 @@
 
 - Descargar e instalar IntelliJ IDEA
     - https://www.jetbrains.com/es-es/idea/download
-        + Se puede utilizar la versión Community (libre) o la versión Ultimate 
-          (solicitando una licencia para estudiantes). 
+    - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en 
+      https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión 
+      Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá 
+      realizarse con otro editor (e.g. Visual Studio Code).
     - Instalar usando las opciones por defecto.
 	 
 - Descargar e instalar MySQL 8:
