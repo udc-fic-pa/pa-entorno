@@ -181,6 +181,9 @@
 ```shell
     ssh-keygen -t rsa -b 4096 -C "your_email@udc.es"
 ```    
+
+## Añadir clave SSH a GitHub
+> NOTA: Este paso no es necesario si ya utilizó GitHub en otras asignaturas.
     
 - Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
 - Añadir una clave SSH.
