@@ -171,7 +171,7 @@
     git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe' -w"
 ```
 
-### Creación y configuración de claves SSH
+## Creación y configuración de claves SSH
 > NOTA: Este paso no es necesario si ya utilizó Git en otras asignaturas
 
 - Desde el intérprete de comandos git-bash ejecutar:
