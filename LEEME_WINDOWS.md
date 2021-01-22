@@ -85,7 +85,7 @@
 
 - Comprobar que se puede ejecutar IntelliJ IDEA
 
-## Creación de bases de datos necesarias para los ejemplos
+## Creación de bases de datos necesarias para pa-shop y la práctica
 
 - Arrancar MySQL
   - Si se ha instalado como servicio seguramente se haya iniciado de forma 
@@ -134,7 +134,7 @@
         exit
 ```
 
-## Inicialización de datos de ejemplo y compilación de los ejemplos
+## Inicialización de datos de ejemplo y compilación de pa-shop
 
 - Inicialización de la base de datos y compilación/configuración de los ejemplos
 

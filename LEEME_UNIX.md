@@ -123,7 +123,7 @@
     which node
 ```
     
-## Creación de bases de datos necesarias para los ejemplos
+## Creación de bases de datos necesarias para pa-shop y la práctica
 
 - Arrancar MySQL (sólo si el arranque no es automático)
 
@@ -170,9 +170,9 @@
         exit
 ```
         
-## Inicialización de datos de ejemplo y compilación de los ejemplos
+## Inicialización de datos de ejemplo y compilación de pa-shop
 
-- Inicialización de la base de datos y compilación de los ejemplos
+- Inicialización de la base de datos y compilación de pa-shop
 
 ```shell
     cd $HOME/software/pa-shop-<version>/backend
