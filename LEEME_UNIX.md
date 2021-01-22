@@ -145,7 +145,7 @@
 - Creación de usuario "pa" con password "pa" y con permisos sobre las bases de datos "pa", "patest", "paproject" y "paprojecttest".
 
 ```shell
-    mysql -u root
+    mysql -u root -p
         CREATE USER 'pa'@'localhost' IDENTIFIED BY 'pa';
         GRANT ALL PRIVILEGES ON pa.* to 'pa'@'localhost' WITH GRANT OPTION;
         GRANT ALL PRIVILEGES ON patest.* to 'pa'@'localhost' WITH GRANT OPTION;
