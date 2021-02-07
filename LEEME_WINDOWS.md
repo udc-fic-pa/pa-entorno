@@ -97,7 +97,7 @@
 > NOTA: Cuando se ejecutan los comandos `mysqladmin` y `myqsl`, con la opción
   `-p` se nos solicitará la password del usuario root.
 
-- Creación de bases de datos pa/patest y paproject/paprojecttest (abrir en una consola diferente)
+- Creación de las bases de datos "pa", "patest", "paproject" y "paprojecttest" (abrir en una consola diferente)
 
 ```shell
 	mysqladmin -u root create pa -p
@@ -106,7 +106,7 @@
 	mysqladmin -u root create paprojecttest -p    
 ```
 
-- Creación de usuario pa con password con permisos sobre pa/patest y paproject/paprojecttest
+- Creación de usuario "pa" con password "pa" y con permisos sobre las bases de datos "pa", "patest", "paproject" y "paprojecttest".
 
 ```shell
     mysql -u root -p
