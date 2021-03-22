@@ -1,4 +1,4 @@
-# Instalación / Configuración entorno PA / 2020-2021 - Windows
+# Instalación / Configuración entorno PA / 2021-2022 - Windows
 -------------------------------------------------------------------------------
 
 ## Descargar e instalar el software
