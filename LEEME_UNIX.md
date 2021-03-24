@@ -1,6 +1,5 @@
 # Instalación / Configuración entorno PA / 2021-2022 - Linux y macOS
 
-
 ## Descargar e instalar el software
   
 - [Linux] 
@@ -20,6 +19,9 @@
         - MySQL 8
             - Para Debian y Ubuntu seguir las instrucciones que se indican en https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install.
             - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html.
+        - Git
+            - https://git-scm.com/downloads
+            - Hacer clic en "Linux/Unix" y seguir las instrucciones según la distribución de linux utilizada.
             
 - [macOS] 
     - Descargar y descomprimir en `$HOME/software`
@@ -43,13 +45,17 @@
         - Node 14 LTS
             - https://nodejs.org.
             - Descargar y ejecutar el instalador .pkg.
+        - Git
+            - https://git-scm.com/downloads
+            - Hacer clic en "Mac OS X". En la siguiente pantalla, dentro de la sección "Binary Installer",
+              bajar la última versión disponible (un fichero .dmg).
+            - Instalar con las opciones por defecto.
          
-## Descargar y descomprimir pa-shop de Moodle
-- Descargar en `$HOME/software`
+## Clonar pa-shop
 
 ```shell
     cd $HOME/software
-    unzip pa-shop-<version>.zip
+    git clone git@github.com:udc-fic-pa/pa-shop.git
 ```
 
 ## [Linux] Establecer variables de entorno
@@ -175,9 +181,9 @@
 - Inicialización de la base de datos y compilación de pa-shop
 
 ```shell
-    cd $HOME/software/pa-shop-<version>/backend
+    cd $HOME/software/pa-shop/backend
     mvn sql:execute package
-    cd $HOME/software/pa-shop-<version>/frontend
+    cd $HOME/software/pa-shop/frontend
     npm install
 ```
     
@@ -189,20 +195,8 @@
     mysqladmin -u root shutdown
 ```
       
-## Instalación y configuración básica de Git
-> NOTA: Este paso no es necesario si ya utilizó Git en otras asignaturas.
-
-- Instalación en Linux
-    - https://git-scm.com/downloads
-    - Hacer clic en "Linux/Unix" y seguir las instrucciones según la distribución de linux utilizada.
-     
-- Instalación en macOS
-    - https://git-scm.com/downloads
-    - Hacer clic en "Mac OS X". En la siguiente pantalla, dentro de la sección "Binary Installer",
-      bajar la última versión disponible (un fichero .dmg).
-    - Instalar con las opciones por defecto.
-
-- Configuración básica (Linux y macOS)
+## Configuración básica de Git
+> NOTA: Este paso no es necesario si ya se utilizó y configuró Git en otras asignaturas.
 
 ```shell
     git config --global user.email "your_email@udc.es"
@@ -220,7 +214,7 @@ instalado en el sistema operativo.
 ```
 
 ## Creación y configuración de claves SSH
-> NOTA: Este paso no es necesario si ya utilizó Git en otras asignaturas.
+> NOTA: Este paso no es necesario si ya se utilizó Git en otras asignaturas.
 
 - Desde un terminal ejecutar:
 
@@ -232,7 +226,7 @@ instalado en el sistema operativo.
 ```
 
 ## Añadir clave SSH a GitHub
-> NOTA: Este paso no es necesario si ya utilizó GitHub en otras asignaturas.
+> NOTA: Este paso no es necesario si ya se utilizó GitHub en otras asignaturas.
 
 - Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
 - Añadir una clave SSH.

@@ -1,5 +1,4 @@
 # Instalación / Configuración entorno PA / 2021-2022 - Windows
--------------------------------------------------------------------------------
 
 ## Descargar e instalar el software
 
@@ -40,8 +39,17 @@
     - Descargar el instalador de https://nodejs.org/es/download/
     - Doble-click en el instalador e instalar con las opciones por defecto
 
-## Descargar y descomprimir pa-shop de Moodle
-- Descargar y descomprimir en `C:\software`
+- Git
+    - https://git-scm.com/downloads
+    - Hacer clic en "Windows" para descargar.
+    - Instalar con las opciones por defecto.
+
+## Clonar pa-shop
+
+```shell
+    cd c:\software
+    git clone git@github.com:udc-fic-pa/pa-shop.git
+```
 
 ## Establecer variables de entorno
 
@@ -136,29 +144,22 @@
 
 ## Inicialización de datos de ejemplo y compilación de pa-shop
 
-- Inicialización de la base de datos y compilación/configuración de los ejemplos
+- Inicialización de la base de datos y compilación de pa-shop
 
 ```shell
-    cd \software\pa-shop-<version>\backend
+    cd \software\pa-shop\backend
     mvn sql:execute install
-    cd \software\pa-shop-<version>\frontend
+    cd \software\pa-shop\frontend
     npm install
 ```
 
   
-## Instalación y configuración básica de Git
+## Configuración básica de Git
 > NOTA: Este paso no es necesario si ya se utilizó y configuró Git en otras asignaturas
-
-- Descargar e instalar Git
-    - https://git-scm.com/downloads
-    - Hacer clic en "Windows" para descargar.
-    - Instalar con las opciones por defecto.
-
-- Configuración básica
 
 > NOTA: `$GIT_HOME` debe sustituirse por la ruta donde se instaló git.
 
-    - Ejecutar git-bash (`$GIT_HOME/git-bash.exe`) y desde ese intérprete de comandos ejecutar:
+- Ejecutar git-bash (`$GIT_HOME/git-bash.exe`) y desde ese intérprete de comandos ejecutar:
     
 ```shell
     git config --global user.email "your_email@udc.es"
@@ -172,7 +173,7 @@
 ```
 
 ## Creación y configuración de claves SSH
-> NOTA: Este paso no es necesario si ya utilizó Git en otras asignaturas
+> NOTA: Este paso no es necesario si ya se utilizó Git en otras asignaturas
 
 - Desde el intérprete de comandos git-bash ejecutar:
 
@@ -183,7 +184,7 @@
 ```    
 
 ## Añadir clave SSH a GitHub
-> NOTA: Este paso no es necesario si ya utilizó GitHub en otras asignaturas.
+> NOTA: Este paso no es necesario si ya se utilizó GitHub en otras asignaturas.
     
 - Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
 - Añadir una clave SSH.
