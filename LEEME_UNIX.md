@@ -214,7 +214,7 @@ instalado en el sistema operativo.
 ```
 
 ## Creación y configuración de claves SSH
-> NOTA: Este paso no es necesario si ya se utilizó Git en otras asignaturas.
+> NOTA: Este paso no es necesario si ya se utilizó Git con SSH en otras asignaturas.
 
 - Desde un terminal ejecutar:
 
@@ -226,7 +226,7 @@ instalado en el sistema operativo.
 ```
 
 ## Añadir clave SSH a GitHub
-> NOTA: Este paso no es necesario si ya se utilizó GitHub en otras asignaturas.
+> NOTA: Este paso no es necesario si ya se utilizó GitHub con SSH en otras asignaturas.
 
 - Acceder a [https://github.com/settings/keys](https://github.com/settings/keys).
 - Añadir una clave SSH.
