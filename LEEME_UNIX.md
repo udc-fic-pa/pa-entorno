@@ -10,9 +10,9 @@
         - IntelliJ IDEA
             - https://www.jetbrains.com/es-es/idea/download
             - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
-        - Node.js 16 LTS
-            - https://nodejs.org.
-            - Descargar la distribución Descargar la distribución binaria .tar.xz (se descomprime usando `tar zxvf <<fichero>>`).
+        - Node.js 14 LTS
+            - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-linux-x64.tar.xz.
+            - Descomprimirla usando `tar zxvf <<fichero>>`.
     - Instalar como paquete
         - AdoptOpenJDK 11
             - Instalar la versión "adoptopenjdk-11-hotspot" siguiendo las instrucciones que se indican en https://adoptopenjdk.net/installation.html#linux-pkg.
@@ -42,9 +42,9 @@
             - Descargar el instalador .dmg e instalar usando las opciones por defecto.
             - Preferencias del sistema -> MySQL -> Elegir "Start MySQL when your computer starts up".
             - Más información: https://dev.mysql.com/doc/refman/8.0/en/osx-installation.html.
-        - Node 14 LTS
-            - https://nodejs.org.
-            - Descargar y ejecutar el instalador .pkg.
+        - Node.js 14 LTS
+            - Desargar el instalador: https://nodejs.org/download/release/v14.18.3/node-v14.18.3.pkg.
+            - Doble-clic en el instalador.
         - Git
             - https://git-scm.com/downloads
             - Hacer clic en "Mac OS X". En la siguiente pantalla, dentro de la sección "Binary Installer",
@@ -69,12 +69,12 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.6.3
+    MAVEN_HOME=$HOME/software/apache-maven-3.8.2
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
     # Node.
-    NODE_HOME=$HOME/software/node-v14.15.0-linux-x64
+    NODE_HOME=$HOME/software/node-v14.18.3-linux-x64
     PATH=$NODE_HOME/bin:$PATH
 
     # IntelliJ IDEA
@@ -108,7 +108,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.6.3
+    MAVEN_HOME=$HOME/software/apache-maven-3.8.2
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 

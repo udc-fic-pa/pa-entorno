@@ -35,9 +35,9 @@
      MySQL Server. Utilizar las opciones por defecto excepto las siguientes:
          + Debe introducirse una contraseña no vacía para el usuario `root` (e.g. `root`)
 
-- Node.js 16 LTS
-    - Descargar el instalador de https://nodejs.org/es/download/
-    - Doble-click en el instalador e instalar con las opciones por defecto
+- Node.js 14 LTS
+    - Descargar el instalador: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-x64.msi.
+    - Doble-clic en el instalador e instalar con las opciones por defecto.
 
 - Git
     - https://git-scm.com/downloads
@@ -63,7 +63,7 @@
         + Por ejemplo:`C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
-        + Por ejemplo: `C:\Program Files\Java\apache-maven-3.6.3`
+        + Por ejemplo: `C:\Program Files\Java\apache-maven-3.8.2`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
