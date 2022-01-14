@@ -25,7 +25,7 @@
             
 - [macOS] 
     - Descargar y descomprimir en `$HOME/software`
-        - Maven 3.6.x o superior 
+        - Maven 3.8.x o superior 
             - https://maven.apache.org/download.cgi
             - Descargar el "Binary tar.gz archive"
     - Descargar e instalar
