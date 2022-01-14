@@ -6,7 +6,7 @@
   para evitar problemas con Maven.
 
 - Descargar y descomprimir en `C:\Program Files\Java` el siguiente software
-    - Maven 3.6.x o superior 
+    - Maven 3.8.x o superior 
         + https://maven.apache.org/download.cgi
         + Descargar el "Binary zip archive"
 	 
@@ -35,7 +35,7 @@
      MySQL Server. Utilizar las opciones por defecto excepto las siguientes:
          + Debe introducirse una contraseña no vacía para el usuario `root` (e.g. `root`)
 
-- Node.js 14 (LTS version)
+- Node.js 16 LTS
     - Descargar el instalador de https://nodejs.org/es/download/
     - Doble-click en el instalador e instalar con las opciones por defecto
 

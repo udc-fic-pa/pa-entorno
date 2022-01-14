@@ -4,13 +4,13 @@
   
 - [Linux] 
     - Descargar y descomprimir en `$HOME/software` el siguiente software
-        - Maven 3.6.x o superior 
+        - Maven 3.8.x o superior 
             - https://maven.apache.org/download.cgi
             - Descargar el "Binary tar.gz archive".
         - IntelliJ IDEA
             - https://www.jetbrains.com/es-es/idea/download
             - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
-        - Node 14 LTS
+        - Node.js 16 LTS
             - https://nodejs.org.
             - Descargar la distribución Descargar la distribución binaria .tar.xz (se descomprime usando `tar zxvf <<fichero>>`).
     - Instalar como paquete
