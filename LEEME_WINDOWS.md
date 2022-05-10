@@ -58,7 +58,7 @@
   nombre y el valor, y pulsar "Aceptar")
     - Nombre: `JAVA_HOME`
         + Valor: Directorio donde se instaló AdoptOpenJDK
-        + Por ejemplo:`C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot`
+        + Por ejemplo:`C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
         + Por ejemplo: `C:\software\apache-maven-3.8.5`
