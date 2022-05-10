@@ -5,14 +5,12 @@
 > NOTA: Se recomienda utilizar un usuario de Windows sin espacios en el nombre 
   para evitar problemas con Maven.
 
-- Descargar y descomprimir en `C:\Program Files\Java` el siguiente software
-    - Maven 3.8.x o superior 
-        + https://maven.apache.org/download.cgi
-        + Descargar el "Binary zip archive"
+- Descargar y descomprimir Maven 3.8.x o superior en `C:\software`
+    + https://maven.apache.org/download.cgi
+    + Descargar el "Binary zip archive"
 	 
-- Descargar e instalar AdoptOpenJDK 11
-    - https://adoptopenjdk.net/
-    - Seleccionar la version "Open JDK 11 (LTS)" y la JVM "Hotspot".
+- Descargar e instalar la última versión LTS de Eclipse Temurin (JDK 17)
+    - https://adoptium.net
     - Descargar el instalador .msi para Windows e instalar usando las opciones por defecto.
 
 - Descargar e instalar IntelliJ IDEA
@@ -63,7 +61,7 @@
         + Por ejemplo:`C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
-        + Por ejemplo: `C:\Program Files\Java\apache-maven-3.8.2`
+        + Por ejemplo: `C:\software\apache-maven-3.8.5`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`

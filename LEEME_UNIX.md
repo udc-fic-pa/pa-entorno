@@ -4,6 +4,9 @@
   
 - [Linux] 
     - Descargar y descomprimir en `$HOME/software` el siguiente software
+        - Última versión LTS de Eclipse Temurin (JDK 17)
+            - https://adoptium.net
+            - Descargar el arhivo .tar.gz.
         - Maven 3.8.x o superior 
             - https://maven.apache.org/download.cgi
             - Descargar el "Binary tar.gz archive".
@@ -14,8 +17,6 @@
             - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-linux-x64.tar.xz.
             - Descomprimirla usando `tar zxvf <<fichero>>`.
     - Instalar como paquete
-        - AdoptOpenJDK 11
-            - Instalar la versión "adoptopenjdk-11-hotspot" siguiendo las instrucciones que se indican en https://adoptopenjdk.net/installation.html#linux-pkg.
         - MySQL 8
             - Para Debian y Ubuntu seguir las instrucciones que se indican en https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install.
             - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html.
@@ -33,9 +34,8 @@
             - https://www.jetbrains.com/es-es/idea/download
             - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
             - Descargar y ejecutar el instalador .dmg.
-        - AdoptOpenJDK 11
-            - https://adoptopenjdk.net/
-            - Seleccionar la version "Open JDK 11 (LTS)" y la JVM "Hotspot".
+        - Última versión LTS de Eclipse Temurin (JDK 17)
+            - https://adoptium.net
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
         - MySQL 8
             - https://dev.mysql.com/downloads/mysql/
@@ -64,12 +64,12 @@
 > NOTA: Los valores de las variables JAVA_HOME, MAVEN_HOME, NODE_HOME e IDEA_HOME deben sustituirse por los directorios donde se haya instalado AdoptOpenJDK y descomprimido Maven, Node and IntelliJ IDEA, respectivamente.
 
 ```shell
-    # AdoptOpenJDK (Linux)
-    export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+    # Eclipse Temurin
+    export JAVA_HOME=$HOME/software/jdk-17.0.3+7
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.8.2
+    MAVEN_HOME=$HOME/software/apache-maven-3.8.5
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
@@ -103,12 +103,12 @@
 > NOTA: Los valores de las variables JAVA_HOME y MAVEN_HOME deben sustituirse por los directorios donde se haya instalado AdoptOpenJDK y descomprimido Maven, respectivamente.
 
 ```shell
-    # AdoptOpenJDK (macOS)
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+    # Eclipse Temurin
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.8.2
+    MAVEN_HOME=$HOME/software/apache-maven-3.8.5
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
