@@ -13,6 +13,10 @@
         - IntelliJ IDEA
             - https://www.jetbrains.com/es-es/idea/download
             - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
+            - Configuración:
+              - Arrancar IDEA.
+              - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
+
         - Node.js 14 LTS
             - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-linux-x64.tar.xz.
             - Descomprimirla usando `tar zxvf <<fichero>>`.
@@ -34,6 +38,9 @@
             - https://www.jetbrains.com/es-es/idea/download
             - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
             - Descargar y ejecutar el instalador .dmg.
+            - Configuración:
+              - Arrancar IDEA.
+              - File -> New Projects Setup -> Preferences for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
         - Última versión LTS de Eclipse Temurin (JDK 17)
             - https://adoptium.net
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.

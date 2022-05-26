@@ -20,6 +20,9 @@
       Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá 
       realizarse con otro editor (e.g. Visual Studio Code).
     - Instalar usando las opciones por defecto.
+    - Configuración:
+      - Arrancar IDEA.
+      - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
 	 
 - Descargar e instalar MySQL 8:
     - https://dev.mysql.com/downloads/mysql/
