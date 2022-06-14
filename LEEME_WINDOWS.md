@@ -36,8 +36,8 @@
      MySQL Server. Utilizar las opciones por defecto excepto las siguientes:
          + Debe introducirse una contraseña no vacía para el usuario `root` (e.g. `root`)
 
-- Node.js 14 LTS
-    - Descargar el instalador: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-x64.msi.
+- Node.js 16 LTS
+    - Descargar el instalador: https://nodejs.org/dist/v16.15.1/node-v16.15.1-x64.msi.
     - Doble-clic en el instalador e instalar con las opciones por defecto.
 
 - Git

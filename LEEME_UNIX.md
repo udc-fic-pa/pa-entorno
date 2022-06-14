@@ -17,8 +17,8 @@
               - Arrancar IDEA.
               - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
 
-        - Node.js 14 LTS
-            - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v14.18.3/node-v14.18.3-linux-x64.tar.xz.
+        - Node.js 16 LTS
+            - Descargar la distribución binaria .tar.xz: https://nodejs.org/dist/v16.15.1/node-v16.15.1-linux-x64.tar.xz.
             - Descomprimirla usando `tar zxvf <<fichero>>`.
     - Instalar como paquete
         - MySQL 8
@@ -49,8 +49,8 @@
             - Descargar el instalador .dmg e instalar usando las opciones por defecto.
             - Preferencias del sistema -> MySQL -> Elegir "Start MySQL when your computer starts up".
             - Más información: https://dev.mysql.com/doc/refman/8.0/en/osx-installation.html.
-        - Node.js 14 LTS
-            - Desargar el instalador: https://nodejs.org/download/release/v14.18.3/node-v14.18.3.pkg.
+        - Node.js 16 LTS
+            - Desargar el instalador: https://nodejs.org/dist/v16.15.1/node-v16.15.1.pkg.
             - Doble-clic en el instalador.
         - Git
             - https://git-scm.com/downloads
@@ -81,7 +81,7 @@
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
     # Node.
-    NODE_HOME=$HOME/software/node-v14.18.3-linux-x64
+    NODE_HOME=$HOME/software/node-v16.15.1-linux-x64
     PATH=$NODE_HOME/bin:$PATH
 
     # IntelliJ IDEA
