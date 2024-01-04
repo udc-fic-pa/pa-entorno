@@ -7,7 +7,7 @@
         - Última versión LTS de Eclipse Temurin (JDK 17)
             - https://adoptium.net
             - Descargar el arhivo .tar.gz.
-        - Maven 3.8.x o superior 
+        - Maven 3.9.x o superior 
             - https://maven.apache.org/download.cgi
             - Descargar el "Binary tar.gz archive".
         - IntelliJ IDEA
@@ -30,7 +30,7 @@
             
 - [macOS] 
     - Descargar y descomprimir en `$HOME/software`
-        - Maven 3.8.x o superior 
+        - Maven 3.9.x o superior 
             - https://maven.apache.org/download.cgi
             - Descargar el "Binary tar.gz archive"
     - Descargar e instalar
@@ -76,7 +76,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.8.5
+    MAVEN_HOME=$HOME/software/apache-maven-3.9.4
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
@@ -115,7 +115,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.8.5
+    MAVEN_HOME=$HOME/software/apache-maven-3.9.4
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 

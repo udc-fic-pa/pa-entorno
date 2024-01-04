@@ -5,7 +5,7 @@
 > NOTA: Se recomienda utilizar un usuario de Windows sin espacios en el nombre 
   para evitar problemas con Maven.
 
-- Descargar y descomprimir Maven 3.8.x o superior en `C:\software`
+- Descargar y descomprimir Maven 3.9.x o superior en `C:\software`
     + https://maven.apache.org/download.cgi
     + Descargar el "Binary zip archive"
 	 
@@ -64,7 +64,7 @@
         + Por ejemplo:`C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
-        + Por ejemplo: `C:\software\apache-maven-3.8.5`
+        + Por ejemplo: `C:\software\apache-maven-3.9.4`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
