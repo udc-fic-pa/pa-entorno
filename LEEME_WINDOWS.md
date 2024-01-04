@@ -24,9 +24,9 @@
       - Arrancar IDEA.
       - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
 	 
-- Descargar e instalar MySQL 8:
+- Descargar e instalar MySQL 8.0.x:
     - https://dev.mysql.com/downloads/mysql/
-        + Descargar el instalador .msi para Windows
+        + Descargar el instalador .msi para Windows de la versión 8.0.x.
     - Instalar en la ruta por defecto.
     - Comprobar que la opción "Start the MySQL Server at System Startup"
       está marcada, para que se instale como servicio Windows.
@@ -100,11 +100,11 @@
   - Si se ha instalado como servicio seguramente se haya iniciado de forma 
     automática. En otro caso habría que iniciar el servicio manualmente.
     
-> NOTA: En Panel de Control, Servicios Locales se puede configurar arranque 
+> NOTA 1: En Panel de Control, Servicios Locales se puede configurar arranque 
   automático o manual. También se puede arrancar y detener.
            
-> NOTA: Cuando se ejecutan los comandos `mysqladmin` y `myqsl`, con la opción
-  `-p` se nos solicitará la password del usuario root.
+> NOTA 2: Cuando se ejecutan los comandos `mysqladmin` y `myqsl` con la opción
+  `-p`, la password que se nos solicitará es la del usuario root que se especificó al instalar MySQL.
 
 - Creación de las bases de datos "pa", "patest", "paproject" y "paprojecttest" (abrir en una consola diferente)
 
