@@ -149,7 +149,7 @@
 
 ```shell
     cd \software\pa-shop\backend
-    mvn sql:execute install
+    mvn sql:execute package
     cd \software\pa-shop\frontend
     npm install
 ```
