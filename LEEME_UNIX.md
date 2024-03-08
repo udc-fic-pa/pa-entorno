@@ -4,7 +4,7 @@
   
 - [Linux] 
     - Descargar y descomprimir en `$HOME/software` el siguiente software
-        - Última versión LTS de Eclipse Temurin (JDK 17)
+        - Última versión LTS de Eclipse Temurin (JDK 21)
             - https://adoptium.net
             - Descargar el arhivo .tar.gz.
         - Maven 3.9.x o superior 
@@ -41,7 +41,7 @@
             - Configuración:
               - Arrancar IDEA.
               - File -> New Projects Setup -> Preferences for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
-        - Última versión LTS de Eclipse Temurin (JDK 17)
+        - Última versión LTS de Eclipse Temurin (JDK 21)
             - https://adoptium.net
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
         - MySQL 8.0.x
@@ -72,7 +72,7 @@
 
 ```shell
     # Eclipse Temurin
-    export JAVA_HOME=$HOME/software/jdk-17.0.3+7
+    export JAVA_HOME=$HOME/software/jdk-21.0.2+13
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
@@ -111,7 +111,7 @@
 
 ```shell
     # Eclipse Temurin
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven

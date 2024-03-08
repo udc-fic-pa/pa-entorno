@@ -9,7 +9,7 @@
     + https://maven.apache.org/download.cgi
     + Descargar el "Binary zip archive"
 	 
-- Descargar e instalar la última versión LTS de Eclipse Temurin (JDK 17)
+- Descargar e instalar la última versión LTS de Eclipse Temurin (JDK 21)
     - https://adoptium.net
     - Descargar el instalador .msi para Windows e instalar usando las opciones por defecto.
 
@@ -61,7 +61,7 @@
   nombre y el valor, y pulsar "Aceptar")
     - Nombre: `JAVA_HOME`
         + Valor: Directorio donde se instaló AdoptOpenJDK
-        + Por ejemplo:`C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot`
+        + Por ejemplo:`C:\Program Files\Eclipse Adoptium\jdk-21.0.2+13`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
         + Por ejemplo: `C:\software\apache-maven-3.9.4`
