@@ -22,7 +22,7 @@
             - Descomprimirla usando `tar -Jxvf <<fichero>>`.
     - Instalar como paquete
         - MySQL 8.4.x
-            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install para instalar la versión 8.4.x.
+            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation-apt-repo.html para instalar la versión 8.4.x.
             - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation.html para instalar la versión 8.4.x.
         - Git
             - https://git-scm.com/downloads
