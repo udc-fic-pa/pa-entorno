@@ -21,9 +21,9 @@
             - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v20.11.1/node-v20.11.1-linux-x64.tar.xz.
             - Descomprimirla usando `tar -Jxvf <<fichero>>`.
     - Instalar como paquete
-        - MySQL 8.0.x
-            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install para instalar la versión 8.0.x.
-            - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html para instalar la versión 8.0.x.
+        - MySQL 8.4.x
+            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install para instalar la versión 8.4.x.
+            - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation.html para instalar la versión 8.4.x.
         - Git
             - https://git-scm.com/downloads
             - Hacer clic en "Linux/Unix" y seguir las instrucciones según la distribución de linux utilizada.
@@ -44,11 +44,11 @@
         - Última versión LTS de Eclipse Temurin (JDK 21)
             - https://adoptium.net
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
-        - MySQL 8.0.x
+        - MySQL 8.4.x
             - https://dev.mysql.com/downloads/mysql/
-            - Descargar el instalador .dmg para la versión 8.0.x e instalar usando las opciones por defecto.
+            - Descargar el instalador .dmg para la versión 8.4.x e instalar usando las opciones por defecto.
             - Preferencias del sistema -> MySQL -> Elegir "Start MySQL when your computer starts up".
-            - Más información: https://dev.mysql.com/doc/refman/8.0/en/macos-installation.html.
+            - Más información: https://dev.mysql.com/doc/refman/8.4/en/macos-installation.html.
         - Node.js 20 LTS
             - Descargar el instalador: https://nodejs.org/download/release/v20.11.1/node-v20.11.1.pkg.
             - Doble-clic en el instalador.
@@ -146,7 +146,7 @@
 
 > NOTA 1: En los siguientes pasos, al ejecutar los comandos  `mysqladmin` y `myqsl` con la opción `-p`, la password que se nos solicitará es la del usuario root que se especificó al instalar MySQL.
 
-> NOTA 2: Si el instalador de MySQL 8.0.x en Linux no nos permitió configurar la contraseña del usuario `root` durante la instalación, los siguientes
+> NOTA 2: Si el instalador de MySQL en Linux no nos permitió configurar la contraseña del usuario `root` durante la instalación, los siguientes
 comandos deben ejecutarse con el comando `sudo` delante para que no se nos solicite la contraseña del usuario `root` de MySQL.
 
 - Creación de las bases de datos "pa", "patest", "paproject" y "paprojecttest" (abrir en una consola diferente)

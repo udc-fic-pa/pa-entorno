@@ -24,9 +24,9 @@
       - Arrancar IDEA.
       - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
 	 
-- Descargar e instalar MySQL 8.0.x:
+- Descargar e instalar MySQL 8.4.x:
     - https://dev.mysql.com/downloads/mysql/
-        + Descargar el instalador .msi para Windows de la versión 8.0.x.
+        + Descargar el instalador .msi para Windows de la versión 8.4.x.
     - Instalar en la ruta por defecto.
     - Comprobar que la opción "Start the MySQL Server at System Startup"
       está marcada, para que se instale como servicio Windows.
@@ -69,7 +69,7 @@
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`
         + Valor: Directorio donde se instaló MySQL
-        + Por ejemplo: `C:\Program Files\MySQL\MySQL Server 8.0`
+        + Por ejemplo: `C:\Program Files\MySQL\MySQL Server 8.4`
 
 - En la sección "Variables de usuario para `<user>`", modificar la variable de
   entorno `PATH`. Para ello hay que seleccionarla, pulsar en "Editar..." y 
