@@ -36,8 +36,8 @@
      MySQL Server. Utilizar las opciones por defecto excepto las siguientes:
          + Debe introducirse una contraseña no vacía para el usuario `root` (e.g. `root`)
 
-- Node.js 20 LTS
-    - Descargar el instalador: https://nodejs.org/download/release/v20.11.1/node-v20.11.1-x64.msi.
+- Node.js 22 LTS
+    - Descargar el instalador: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-x64.msi.
     - Doble-clic en el instalador e instalar con las opciones por defecto.
 
 - Git
