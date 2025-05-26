@@ -40,7 +40,7 @@
             - Descargar y ejecutar el instalador .dmg.
             - Configuración:
               - Arrancar IDEA.
-              - File -> New Projects Setup -> Preferences for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
+              - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Default encoding for properties files -> UTF-8.
         - Última versión LTS de Eclipse Temurin (JDK 21)
             - https://adoptium.net
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
