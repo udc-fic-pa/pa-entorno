@@ -26,7 +26,7 @@
             - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation.html para instalar la versión 8.4.x.
         - Git
             - https://git-scm.com/downloads
-            - Hacer clic en "Linux/Unix" y seguir las instrucciones según la distribución de linux utilizada.
+            - Hacer clic en "Linux/Unix" e instalar como se indica.
             
 - [macOS] 
     - Descargar y descomprimir en `$HOME/software`
@@ -54,9 +54,7 @@
             - Doble-clic en el instalador.
         - Git
             - https://git-scm.com/downloads
-            - Hacer clic en "Mac OS X". En la siguiente pantalla, dentro de la sección "Binary Installer",
-              bajar la última versión disponible (un fichero .dmg).
-            - Instalar con las opciones por defecto.
+            - Hacer clic en "macOS" e instalar como se indica.
          
 ## Clonar pa-shop
 

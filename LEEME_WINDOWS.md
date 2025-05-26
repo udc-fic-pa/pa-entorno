@@ -42,8 +42,7 @@
 
 - Git
     - https://git-scm.com/downloads
-    - Hacer clic en "Windows" para descargar.
-    - Instalar con las opciones por defecto.
+    - Hacer clic en "Windows" e instalar como se indica.
 
 ## Clonar pa-shop
 
