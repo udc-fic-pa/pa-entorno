@@ -59,11 +59,11 @@
   variables de entorno (para cada una pulsar en "Nueva ...", introducir el 
   nombre y el valor, y pulsar "Aceptar")
     - Nombre: `JAVA_HOME`
-        + Valor: Directorio donde se instaló AdoptOpenJDK
+        + Valor: Directorio donde se instaló el JDK.
         + Por ejemplo:`C:\Program Files\Eclipse Adoptium\jdk-21.0.2+13`
     - Nombre: `MAVEN_HOME`
         + Valor: Directorio donde se descomprimió Maven
-        + Por ejemplo: `C:\software\apache-maven-3.9.4`
+        + Por ejemplo: `C:\software\apache-maven-3.9.9`
     - Nombre: `MAVEN_OPTS`
         + Valor: `-Xms512m -Xmx1024m`
     - Nombre: `MYSQL_HOME`

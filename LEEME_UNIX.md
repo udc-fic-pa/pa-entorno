@@ -66,7 +66,7 @@
 ## [Linux] Establecer variables de entorno
 - Añadir al fichero `$HOME/.bashrc` lo siguiente 
 
-> NOTA: Los valores de las variables JAVA_HOME, MAVEN_HOME, NODE_HOME e IDEA_HOME deben sustituirse por los directorios donde se haya instalado AdoptOpenJDK y descomprimido Maven, Node and IntelliJ IDEA, respectivamente.
+> NOTA: Los valores de las variables JAVA_HOME, MAVEN_HOME, NODE_HOME e IDEA_HOME deben sustituirse por los directorios donde se haya instalado el JDK y descomprimido Maven, Node and IntelliJ IDEA, respectivamente.
 
 ```shell
     # Eclipse Temurin
@@ -74,7 +74,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.9.4
+    MAVEN_HOME=$HOME/software/apache-maven-3.9.9
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
@@ -100,12 +100,9 @@
 ```
 
 ## [macOS] Establecer variables de entorno
-> NOTA: asumiendo que la aplicación Terminal use el shell de inicio de sesión, éste será "zsh" (macOS 10.15 o superior) o "bash" (versiones anteriores de macOS).
+- Añadir al fichero `$HOME/.zshrc` lo siguiente:
 
-- Añadir al fichero `$HOME/.zshrc` (macOS 10.15 o superior) o 
-  `$HOME/.bash_profile` (versiones anteriores de macOS) lo siguiente:
-
-> NOTA: Los valores de las variables JAVA_HOME y MAVEN_HOME deben sustituirse por los directorios donde se haya instalado AdoptOpenJDK y descomprimido Maven, respectivamente.
+> NOTA: Los valores de las variables JAVA_HOME y MAVEN_HOME deben sustituirse por los directorios donde se haya instalado el JDK y descomprimido Maven, respectivamente.
 
 ```shell
     # Eclipse Temurin
@@ -113,7 +110,7 @@
     PATH=$JAVA_HOME/bin:$PATH
 
     # Maven
-    MAVEN_HOME=$HOME/software/apache-maven-3.9.4
+    MAVEN_HOME=$HOME/software/apache-maven-3.9.9
     PATH=$MAVEN_HOME/bin:$PATH
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
