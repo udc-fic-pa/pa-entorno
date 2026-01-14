@@ -4,8 +4,8 @@
   
 - [Linux] 
     - Descargar y descomprimir en `$HOME/software` el siguiente software
-        - Última versión LTS de Eclipse Temurin (JDK 21)
-            - https://adoptium.net
+        - Temurin JDK 21 LTS
+            - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
             - Descargar el arhivo .tar.gz.
         - Maven 3.9.x o superior 
             - https://maven.apache.org/download.cgi
@@ -16,7 +16,6 @@
             - Configuración:
               - Arrancar IDEA.
               - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
-
         - Node.js 22 LTS
             - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-linux-x64.tar.xz.
             - Descomprimirla usando `tar -Jxvf <<fichero>>`.
@@ -41,8 +40,8 @@
             - Configuración:
               - Arrancar IDEA.
               - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Default encoding for properties files -> UTF-8.
-        - Última versión LTS de Eclipse Temurin (JDK 21)
-            - https://adoptium.net
+        - Temurin JDK 21 LTS
+            - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
         - MySQL 8.4.x
             - https://dev.mysql.com/downloads/mysql/

@@ -9,8 +9,8 @@
     + https://maven.apache.org/download.cgi
     + Descargar el "Binary zip archive"
 	 
-- Descargar e instalar la última versión LTS de Eclipse Temurin (JDK 21)
-    - https://adoptium.net
+- Temurin JDK 21 LTS
+    - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
     - Descargar el instalador .msi para Windows e instalar usando las opciones por defecto.
 
 - Descargar e instalar IntelliJ IDEA
