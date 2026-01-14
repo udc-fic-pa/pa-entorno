@@ -12,7 +12,7 @@
             - Descargar el "Binary tar.gz archive".
         - IntelliJ IDEA
             - https://www.jetbrains.com/es-es/idea/download
-            - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
+            - Se puede solicitar una licencia para estudiantes en https://www.jetbrains.com/es-es/academy/student-pack/#students.
             - Configuración:
               - Arrancar IDEA.
               - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Properties Files (*.properties) -> Default encoding for properties files -> UTF-8.
@@ -35,7 +35,7 @@
     - Descargar e instalar
         - IntelliJ IDEA
             - https://www.jetbrains.com/es-es/idea/download
-            - Se recomienda descargar la versión Ultimate. Solicitar la licencia según se indica en https://www.jetbrains.com/es-es/community/education/#students. Si se descarga la versión Community (no requiere licencia), la edición de código del frontend (JavaScript) deberá realizarse con otro editor (e.g. Visual Studio Code).
+            - Se puede solicitar una licencia para estudiantes en https://www.jetbrains.com/es-es/academy/student-pack/#students.
             - Descargar y ejecutar el instalador .dmg.
             - Configuración:
               - Arrancar IDEA.
