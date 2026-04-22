@@ -4,8 +4,8 @@
   
 - [Linux] 
     - Descargar y descomprimir en `$HOME/software` el siguiente software
-        - Temurin JDK 21 LTS
-            - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
+        - Temurin JDK 25 LTS
+            - https://adoptium.net/es/temurin/releases?version=25&os=any&arch=any
             - Descargar el arhivo .tar.gz.
         - Maven 3.9.x o superior 
             - https://maven.apache.org/download.cgi

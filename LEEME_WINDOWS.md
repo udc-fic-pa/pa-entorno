@@ -10,7 +10,7 @@
     + Descargar el "Binary zip archive"
 	 
 - Temurin JDK 21 LTS
-    - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
+    - https://adoptium.net/es/temurin/releases?version=25&os=any&arch=any
     - Descargar el instalador .msi para Windows e instalar usando las opciones por defecto.
 
 - Descargar e instalar IntelliJ IDEA
