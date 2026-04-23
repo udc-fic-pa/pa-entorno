@@ -20,9 +20,9 @@
             - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-linux-x64.tar.xz.
             - Descomprimirla usando `tar -Jxvf <<fichero>>`.
     - Instalar como paquete
-        - MySQL 8.4.x
-            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation-apt-repo.html para instalar la versión 8.4.x.
-            - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/8.4/en/linux-installation.html para instalar la versión 8.4.x.
+        - MySQL 9.7.x LTS
+            - Para Debian y Ubuntu, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/9.7/en/linux-installation-apt-repo.html para instalar la versión 9.7.x LTS.
+            - Para otras distribuciones de Linux, seguir las instrucciones que se indican en https://dev.mysql.com/doc/refman/9.7/en/linux-installation.html para instalar la versión 9.7.x LTS.
         - Git
             - https://git-scm.com/downloads
             - Hacer clic en "Linux/Unix" e instalar como se indica.
@@ -43,11 +43,11 @@
         - Temurin JDK 21 LTS
             - https://adoptium.net/es/temurin/releases?version=21&os=any&arch=any
             - Descargar el instalador .pkg e instalar usando las opciones por defecto.
-        - MySQL 8.4.x
+        - MySQL 9.7.x LTS
             - https://dev.mysql.com/downloads/mysql/
-            - Descargar el instalador .dmg para la versión 8.4.x e instalar usando las opciones por defecto.
+            - Descargar el instalador .dmg para la versión 9.7.x LTS e instalar usando las opciones por defecto.
             - Preferencias del sistema -> MySQL -> Elegir "Start MySQL when your computer starts up".
-            - Más información: https://dev.mysql.com/doc/refman/8.4/en/macos-installation.html.
+            - Más información: https://dev.mysql.com/doc/refman/9.7/en/macos-installation.html.
         - Node.js 22 LTS
             - Descargar el instalador: https://nodejs.org/download/release/v22.14.0/node-v22.14.0.pkg.
             - Doble-clic en el instalador.

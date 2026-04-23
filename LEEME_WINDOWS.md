@@ -21,9 +21,9 @@
       - Arrancar IDEA.
       - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Default encoding for properties files -> UTF-8.
 	 
-- Descargar e instalar MySQL 8.4.x:
+- Descargar e instalar MySQL 9.7.x LTS:
     - https://dev.mysql.com/downloads/mysql/
-        + Descargar el instalador .msi para Windows de la versión 8.4.x.
+        + Descargar el instalador .msi para Windows de la versión 9.7.x LTS.
     - Instalar en la ruta por defecto.
     - Comprobar que la opción "Start the MySQL Server at System Startup"
       está marcada, para que se instale como servicio Windows.
