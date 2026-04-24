@@ -16,8 +16,8 @@
             - Configuración:
               - Arrancar IDEA.
               - File -> New Projects Setup -> Settings for New Projects -> Editor -> File Encodings -> Default encoding for properties files -> UTF-8.
-        - Node.js 22 LTS
-            - Descargar la distribución binaria .tar.xz: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-linux-x64.tar.xz.
+        - Node.js 24 LTS
+            - Descargar la distribución binaria .tar.xz: https://nodejs.org/dist/v24.15.0/node-v24.15.0-linux-x64.tar.xz.
             - Descomprimirla usando `tar -Jxvf <<fichero>>`.
     - Instalar como paquete
         - MySQL 9.7.x LTS
@@ -48,8 +48,8 @@
             - Descargar el instalador .dmg para la versión 9.7.x LTS e instalar usando las opciones por defecto.
             - Preferencias del sistema -> MySQL -> Elegir "Start MySQL when your computer starts up".
             - Más información: https://dev.mysql.com/doc/refman/9.7/en/macos-installation.html.
-        - Node.js 22 LTS
-            - Descargar el instalador: https://nodejs.org/download/release/v22.14.0/node-v22.14.0.pkg.
+        - Node.js 24 LTS
+            - Descargar el instalador: https://nodejs.org/dist/v24.15.0/node-v24.15.0.pkg.
             - Doble-clic en el instalador.
         - Git
             - https://git-scm.com/downloads
@@ -78,7 +78,7 @@
     export MAVEN_OPTS="-Xms512m -Xmx1024m"
 
     # Node.
-    NODE_HOME=$HOME/software/node-v22.14.0-linux-x64
+    NODE_HOME=$HOME/software/node-v24.15.0-linux-x64
     PATH=$NODE_HOME/bin:$PATH
 
     # IntelliJ IDEA
